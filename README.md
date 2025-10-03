@@ -1,7 +1,15 @@
 # DiceGame
 ### Simple Python Console Dice Rolling Game
 
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Status](https://img.shields.io/badge/status-active-success)
+
 A straightforward console-based dice game where players roll two six-sided dice and track their highest score across multiple rounds.
+
+## Screenshots
+
+> **Note:** Console output screenshots will be added soon. Run `python cc_for_loop.py` to see the game in action.
 
 ## Overview
 
@@ -54,11 +62,69 @@ You rolled a total of  10
 New high score!
 ```
 
-## Requirements
+## Prerequisites
 
-- Python 3.x
-- No external dependencies required
+- **Python**: version 3.6 or higher ([Download](https://www.python.org/downloads/))
+- **No external dependencies required** - uses only Python's built-in `random` module
+
+To check your Python version:
+```bash
+python --version
+# or
+python3 --version
+```
+
+## Troubleshooting
+
+### Common Issues
+
+**Issue:** `python: command not found`
+
+**Solution:** Install Python 3 from [python.org](https://www.python.org/downloads/) or use `python3` instead of `python`.
+
+---
+
+**Issue:** Game exits immediately without showing menu
+
+**Solution:** Ensure you're running the correct file (`python cc_for_loop.py`) and check that the file hasn't been modified.
+
+---
+
+**Issue:** Invalid input causes errors
+
+**Solution:** Enter only `1` or `2` when prompted. The game expects numeric input.
+
+---
+
+**Issue:** Random results seem predictable
+
+**Solution:** Python's `random` module uses a pseudorandom number generator. For true randomness in production applications, consider using `secrets` module.
+
+For additional help, please open an issue in the repository issue tracker.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add YourFeature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a Pull Request
+
+### Enhancement Ideas
+- Add difficulty levels
+- Track statistics (average roll, total rolls, etc.)
+- Implement multiple players
+- Add sound effects
+- Create a GUI version
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact & Support
+
+- **Author**: Jose Santiago Echevarria
+- **Issues**: Please report bugs via the repository issue tracker
+- **Educational Purpose**: This project demonstrates Python loops, conditionals, and random number generation
